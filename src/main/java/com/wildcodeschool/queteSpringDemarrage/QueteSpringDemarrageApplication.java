@@ -14,6 +14,18 @@ public class QueteSpringDemarrageApplication {
 		SpringApplication.run(QueteSpringDemarrageApplication.class, args);
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method index
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 //	@RequestMapping("/")
 //	@ResponseBody
 //	public String index() {
@@ -29,46 +41,110 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	public String index() {
-		String listeDoctors = "<ul>" + "<li><a href=\"/doctor/1\">Doctor 1 </a></li>"
-				+ "<li><a href=\"/doctor/2\">Doctor 2 </a></li>" + "<li><a href=\"/doctor/3\">Doctor 3 </a></li>"
-				+ "<li><a href=\"/doctor/4\">Doctor 4 </a></li>" + "</ul>";
+		String listeDoctors = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "<ul>"
+				+ "<li><a href=\"/doctor/1\">Doctor 1 </a></li>" + "<li><a href=\"/doctor/2\">Doctor 2 </a></li>"
+				+ "<li><a href=\"/doctor/3\">Doctor 3 </a></li>" + "<li><a href=\"/doctor/4\">Doctor 4 </a></li>"
+				+ "</ul>" + "</FONT>";
 		return listeDoctors;
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method doctor1
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 	@RequestMapping("/doctor/1")
 	@ResponseBody
 	public String doctor1() {
-//		String doctor1 = "William Hartnell" + "</br><a href=\"/\" title=\"William Hartnell\">accueil</a>";
-		String doctor1 = "William Hartnell" + "<a href=\"/\" title=\"William Hartnell\"> accueil </a>";
+		String doctor1 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "William Hartnell"
+				+ "<a href=\"/\" title=\"William Hartnell\"> accueil </a>" + "</FONT>";
 		return doctor1;
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method doctor2
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 	@RequestMapping("/doctor/2")
 	@ResponseBody
 	public String doctor2() {
-//		String doctor2 = "Patrick Troughton" + "</br><a href=\"/\">accueil</a>";
-		String doctor2 = "Patrick Troughton" + "<a href=\"/\" title=Patrick Troughton> accueil </a>";
+		String doctor2 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Patrick Troughton"
+				+ "<a href=\"/\" title=Patrick Troughton> accueil </a>" + "</FONT>";
 		return doctor2;
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method doctor3
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 	@RequestMapping("/doctor/3")
 	@ResponseBody
 	public String doctor3() {
-		String doctor3 = "Jon Pertwee" + "<a href=\"/\" title=\"Jon Pertwee\"> accueil </a>";
+		String doctor3 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Jon Pertwee"
+				+ "<a href=\"/\" title=\"Jon Pertwee\"> accueil </a>" + "</FONT>";
 		return doctor3;
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method doctor4
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 	@RequestMapping("/doctor/4")
 	@ResponseBody
 	public String doctor4() {
-		String doctor4 = "Tom Baker" + "<a href=\"/\" title=\"Tom Baker\"> accueil </a>";
+		String doctor4 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Tom Baker"
+				+ "<a href=\"/\" title=\"Tom Baker\"> accueil </a>" + "</FONT>";
 		return doctor4;
 	}
 
+	/**
+	 * @description
+	 *
+	 * @return String
+	 *
+	 * @method doctor5
+	 * @class QueteSpringDemarrageApplication
+	 * @version 1.0
+	 * @date samedi 12 oct. 2019
+	 * @see
+	 *
+	 **/
 	@RequestMapping("/doctor/5")
 	@ResponseBody
 	public String doctor5() {
-		String doctor5 = "Peter Davison" + "<a href=\"/\" title=\"Peter Davison\"> accueil </a>";
+		String doctor5 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Peter Davison"
+				+ "<a href=\"/\" title=\"Peter Davison\"> accueil </a>" + "</FONT>";
 		return doctor5;
 	}
 
