@@ -39,13 +39,16 @@ public class QueteSpringDemarrageApplication {
 //	Peter Davison
 
 	@RequestMapping("/")
-	@ResponseBody
+	@ResponseBody // signifie que l'on va renvoyer la reponse qui est dans le coprs de la methode
+	// et non vers une autre page
 	public String index() {
-		String listeDoctors = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "<ul>"
-				+ "<li><a href=\"/doctor/1\">Doctor 1 </a></li>" + "<li><a href=\"/doctor/2\">Doctor 2 </a></li>"
-				+ "<li><a href=\"/doctor/3\">Doctor 3 </a></li>" + "<li><a href=\"/doctor/4\">Doctor 4 </a></li>"
-				+ "</ul>" + "</FONT>";
-		return listeDoctors;
+		int numberOfDoctors = 5;
+		String listeTOTO = "<FONT size='12pt' color='#5a98f7' face='Times New Roman'>" + "<ul>";
+		for (int i = 1; i <= numberOfDoctors; i++) {
+			listeTOTO += "<li><a href='/doctor/" + i + "'>Doctor " + i + " </a></li>";
+		}
+		listeTOTO += "</ul>" + "</FONT>";
+		return listeTOTO;
 	}
 
 	/**
@@ -63,8 +66,8 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/doctor/1")
 	@ResponseBody
 	public String doctor1() {
-		String doctor1 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "William Hartnell"
-				+ "<a href=\"/\" title=\"William Hartnell\"> accueil </a>" + "</FONT>";
+		String doctor1 = "<FONT size='20pt' color='#5a98f7' face='Times New Roman'>" + "William Hartnell"
+				+ "<a href='/' title='William Hartnell'> accueil </a>" + "</FONT>";
 		return doctor1;
 	}
 
@@ -83,8 +86,8 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/doctor/2")
 	@ResponseBody
 	public String doctor2() {
-		String doctor2 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Patrick Troughton"
-				+ "<a href=\"/\" title=Patrick Troughton> accueil </a>" + "</FONT>";
+		String doctor2 = "<FONT size='20pt' color='#5a98f7' face='Times New Roman'>" + "Patrick Troughton"
+				+ "<a href='/' title=Patrick Troughton> accueil </a>" + "</FONT>";
 		return doctor2;
 	}
 
@@ -103,8 +106,8 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/doctor/3")
 	@ResponseBody
 	public String doctor3() {
-		String doctor3 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Jon Pertwee"
-				+ "<a href=\"/\" title=\"Jon Pertwee\"> accueil </a>" + "</FONT>";
+		String doctor3 = "<FONT size='20pt' color='#5a98f7' face='Times New Roman'>" + "Jon Pertwee"
+				+ "<a href='/' title='Jon Pertwee'> accueil </a>" + "</FONT>";
 		return doctor3;
 	}
 
@@ -123,8 +126,8 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/doctor/4")
 	@ResponseBody
 	public String doctor4() {
-		String doctor4 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Tom Baker"
-				+ "<a href=\"/\" title=\"Tom Baker\"> accueil </a>" + "</FONT>";
+		String doctor4 = "<FONT size='20pt' color='#5a98f7' face='Times New Roman'>" + "Tom Baker"
+				+ "<a href='/' title='Tom Baker'> accueil </a>" + "</FONT>";
 		return doctor4;
 	}
 
@@ -143,8 +146,8 @@ public class QueteSpringDemarrageApplication {
 	@RequestMapping("/doctor/5")
 	@ResponseBody
 	public String doctor5() {
-		String doctor5 = "<FONT size=\"20pt\" color=\"#5a98f7\" face=\"Times New Roman\">" + "Peter Davison"
-				+ "<a href=\"/\" title=\"Peter Davison\"> accueil </a>" + "</FONT>";
+		String doctor5 = "<FONT size='20pt' color='#5a98f7' face='Times New Roman'>" + "Peter Davison"
+				+ "<a href='/' title='Peter Davison'> accueil </a>" + "</FONT>";
 		return doctor5;
 	}
 
